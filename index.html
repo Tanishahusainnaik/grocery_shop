@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket Grocery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Free home delivery on orders above $50 · Fresh produce daily</p>
+    </div>
+
+    <header class="site-header">
+        <div class="logo">Fresh<span>Basket</span></div>
+        <nav>
+            <a href="#categories">Categories</a>
+            <a href="#featured">Featured</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="btn ghost">Login</button>
+            <button class="btn primary">Shop Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="eyebrow">Since 2005 · Trusted by 5k+ households</p>
+                <h1 id="hero-title">Groceries delivered fresh to your door in under 2 hours.</h1>
+                <p class="lead" id="hero-subtitle">Order local produce, pantry staples, and household essentials with transparent pricing and zero hidden fees.</p>
+                <div class="hero-actions">
+                    <button class="btn primary" id="primary-cta">Browse Weekly Deals</button>
+                    <button class="btn secondary" id="secondary-cta">Schedule Delivery</button>
+                </div>
+                <div class="hero-stats" id="hero-stats"></div>
+            </div>
+            <div class="hero-card">
+                <div class="delivery-card">
+                    <div class="card-header">
+                        <span>Next delivery slot</span>
+                        <strong id="delivery-slot">Today · 4:30 PM</strong>
+                    </div>
+                    <ul id="delivery-items"></ul>
+                    <button class="btn full" id="delivery-cta">Track Delivery</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Shop by category</p>
+                    <h2>Everything you need in one stop</h2>
+                </div>
+                <button class="btn ghost">View all</button>
+            </div>
+            <div class="category-grid" id="category-grid"></div>
+        </section>
+
+        <section id="featured" class="featured">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">This week's picks</p>
+                    <h2>Seasonal flavors at member pricing</h2>
+                </div>
+                <div class="filters">
+                    <button class="chip active">All</button>
+                    <button class="chip">Produce</button>
+                    <button class="chip">Pantry</button>
+                    <button class="chip">Drinks</button>
+                </div>
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Why shop with us</p>
+                    <h2>Delivery built for busy schedules</h2>
+                </div>
+            </div>
+            <div class="service-grid" id="service-grid"></div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Community voices</p>
+                    <h2>Loved by home cooks and foodies alike</h2>
+                </div>
+            </div>
+            <div class="testimonial-grid" id="testimonial-grid"></div>
+        </section>
+
+        <section id="contact" class="cta">
+            <div class="cta-card">
+                <h2>Get the weekly harvest newsletter</h2>
+                <p>Recipes, market updates, and surprise discounts straight to your inbox.</p>
+                <form class="cta-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn primary">Subscribe</button>
+                </form>
+                <small>We respect your time and privacy. Zero spam — guaranteed.</small>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="logo">Fresh<span>Basket</span></div>
+                <p>Fresh groceries, honest pricing, and friendly service since 2005.</p>
+            </div>
+            <div>
+                <h4>Visit</h4>
+                <p>81 Market Street<br>Greenfield, CA 93927</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Mon–Sat: 7am–9pm<br>Sun: 8am–7pm</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>(831) 555-0147<br>hello@freshbasket.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> FreshBasket Grocery. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
